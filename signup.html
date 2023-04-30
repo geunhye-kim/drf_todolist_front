@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입 페이지</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/api.js"></script>
+</head>
+
+<body>
+    <h1>회원가입</h1>
+    <form id="signup_form">
+        <p><label>email :</label>
+            <input type="email" , name="email" , id="email" />
+        </p>
+        <p><label>password :</label>
+            <input type="password" , name="password" , id="password" />
+        </p>
+        <p><label>name :</label>
+            <input type="text" , name="name" , id="name" />
+        </p>
+        <p><label>gender :</label>
+            <select name="gender" , id="gender">
+                <option value="">Select gender</option>
+                <option value="M">Male</option>
+                <option value="F">Female</option>
+            </select>
+        </p>
+        <p><label>age :</label>
+            <input type="number" , name="age" , id="age" />
+        </p>
+        <p><label>introduction :</label>
+            <input type="text" , name="introduction" , id="introduction" />
+        </p>
+        <a href="login.html"><button type="button" onclick="handleSignup()">회원가입</button></a>
+        <a href="/"><button type="button">뒤로</button></a>
+    </form>
+</body>
+
+</html>
